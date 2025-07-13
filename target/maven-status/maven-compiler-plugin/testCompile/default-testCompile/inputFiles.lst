@@ -1,0 +1,6 @@
+D:\code\backend\jpa\src\test\java\com\example\jpa\config\TestConfig.java
+D:\code\backend\jpa\src\test\java\com\example\jpa\entity\UserTest.java
+D:\code\backend\jpa\src\test\java\com\example\jpa\repository\UserRepositoryBasicTest.java
+D:\code\backend\jpa\src\test\java\com\example\jpa\entity\UserSimpleTest.java
+D:\code\backend\jpa\src\test\java\com\example\jpa\repository\UserRepositoryMySqlTest.java
+D:\code\backend\jpa\src\test\java\com\example\jpa\repository\UserRepositorySimpleTest.java

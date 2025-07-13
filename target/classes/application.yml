@@ -1,0 +1,31 @@
+spring:
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/jpa_learning?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  
+  # JPA 配置
+  jpa:
+    hibernate:
+      ddl-auto: update  # 更新表结构，不删除数据
+    show-sql: true           # 显示SQL语句
+    format-sql: true         # 格式化SQL语句
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    defer-datasource-initialization: true  # 延迟数据源初始化
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+# 日志配置
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.example.jpa: DEBUG 
